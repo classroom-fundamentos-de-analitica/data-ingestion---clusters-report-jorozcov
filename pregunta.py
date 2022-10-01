@@ -210,11 +210,11 @@ def ingest_data():
     
     df = pd.DataFrame(
         data= {
-            titulos[0] : cant_pal_claves,
-            titulos[1] : porcentajes,
-            titulos[2] : palabras_claves,
-        },
-        index = indices
+            titulos[0] : indices,
+            titulos[1] : cant_pal_claves,
+            titulos[2] : porcentajes,
+            titulos[3] : palabras_claves,
+        }
     )
     
     return df
